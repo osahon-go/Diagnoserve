@@ -11,7 +11,7 @@ import pickle
 app = Flask(__name__)
 CORS(app)
 
-model = pickle.load(open('voting_ensemble.pkl', 'rb'))
+model = pickle.load(open('rf_model.pkl', 'rb'))
 
 df = pd.read_csv('symp.csv', delimiter=',')
 
