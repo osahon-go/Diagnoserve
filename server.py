@@ -2,7 +2,7 @@ from flask import Flask, jsonify, request, json
 from flask_cors import CORS
 import pandas as pd
 import numpy as np
-import pickle
+import joblib
 import NLP
 import nltk
 
@@ -10,8 +10,8 @@ import nltk
 app = Flask(__name__)
 CORS(app)
 
-#model = pickle.load(open('doctor.pkl','rb'))
-model = pickle.load(open('diagmodel.pkl', 'rb'))
+model = joblib.load('voting2.joblib')
+
 
 df = pd.read_csv('symp.csv', delimiter=',')
 
