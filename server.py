@@ -10,7 +10,7 @@ import nltk
 app = Flask(__name__)
 CORS(app)
 
-model = joblib.load('voting2.joblib')
+# model = joblib.load('voting2.joblib')
 
 df = pd.read_csv('symp.csv', delimiter=',')
 
