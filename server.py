@@ -5,12 +5,13 @@ import numpy as np
 import joblib
 import NLP
 import nltk
+import pickle
 
 # app instance
 app = Flask(__name__)
 CORS(app)
 
-# model = joblib.load('voting2.joblib')
+model = pickle.load(open('doctor.pkl', 'rb'))
 
 df = pd.read_csv('symp.csv', delimiter=',')
 
