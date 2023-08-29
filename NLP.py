@@ -1,8 +1,8 @@
 import pandas as pd
 import numpy as np
 import re
-import nltk
 from flask import json
+import nltk
 nltk.download('punkt')
 nltk.download('stopwords') # dict of stopwords
 nltk.download('averaged_perceptron_tagger') # to enable pos tagging
