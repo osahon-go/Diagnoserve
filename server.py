@@ -4,6 +4,7 @@ import pandas as pd
 import numpy as np
 import pickle
 import NLP
+import nltk
 
 # app instance
 app = Flask(__name__)
