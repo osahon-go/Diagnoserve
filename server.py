@@ -12,7 +12,6 @@ CORS(app)
 
 model = joblib.load('voting2.joblib')
 
-
 df = pd.read_csv('symp.csv', delimiter=',')
 
 # app routes
