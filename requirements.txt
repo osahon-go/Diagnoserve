@@ -1,7 +1,7 @@
 flask
 gunicorn
 Flask-Cors
-scikit-learn==1.2.2
+scikit-learn
 pandas
 numpy
 nltk
